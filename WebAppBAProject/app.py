@@ -6,6 +6,9 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from textblob import TextBlob
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
 
 # Load LDA model and vectorizer
 with open("lda_model.pkl", "rb") as f:
